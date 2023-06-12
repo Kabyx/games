@@ -1,0 +1,105 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Games</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style_login.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <header>
+        <div class = "contenedor_nav">
+            <nav id="nav index" class = "nav index">
+                <div class ="logo"><span>Inicio</span>
+                    <img href ="/index.html" src="/img/joystick.png" alt="logo">
+                </div>
+                <ul class="nav_ul">
+                    <li><a href="/index.html" class = "opcion_boton-nav">Inicio</a></li>
+                    <li><a class="opcion_boton-nav">Juegos</a></li>
+                    <li><a href="/html/nosotros.html" class = "opcion_boton-nav">Nosotros</a></li>
+                    <li><a href="/html/login.html" class = "opcion_boton-nav-activo">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <main>
+            <div class = "container_main">
+
+                <div class = "login">
+                    <div class="background_login">
+                        <img class="img_background"src="/img/fondo_nosotros.png">
+                    
+                    <div class="opciones_login">   
+                        <!--Login-->     
+                        <div id = "bloque_login" class="bloque_login" style="display:flex;">
+                            <div class="titulo_login"><span>Inicia Sesión</span></div>
+                            <div class="usuario_login">
+                                Nombre de usuario:
+                                <input type="text" placeholder="Usuario">
+                            </div>
+                            <div class="password_login">
+                                Contraseña:
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+
+                            <div class="botones_login">
+                                <button class="iniciar_sesion_button" style="border:none;" >Iniciar Sesion</button>
+                                <button class="iniciar_sesion_button" style="border:none;" onclick=registro_on()>Registrarse</button>
+                            </div>
+                            <div class="olvidar_contraseña">
+                                <a href="#">
+                                    Olvidé mi contraseña
+                                </a>
+                            </div>
+                        </div>
+                        <!--Register-->     
+                        <div id = "bloque_register"class="bloque_register" style="display:none;">
+                            <div class="titulo_register"><span>Registrarse</span></div>
+
+                            <div class="password_register">
+                                Correo:
+                                <input type="email" placeholder="ejemplo123@email.com">
+                            </div>
+                            <div class="usuario_register">
+                                Nombre de usuario:
+                                <input type="text" placeholder="Usuario">
+                            </div>
+                            <div class="password_register">
+                                Contraseña:
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="password_register 2">
+                                Repita la contraseña:
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+
+                            <div class="botones_register">
+                                <button class="register_button" style="border:none;" onclick=login_on()>Registrarse</button>
+                            </div>
+                            <div class = "terminos">
+                                <input type="checkbox">
+                                Acepto los
+                                <a href="#">términos y condiciones</a>
+                            </div>
+                        </div>
+                    </div> 
+                        
+                </div>
+            </div>
+            </div>
+        </main>
+
+    <footer>
+    
+    </footer>
+        <script src="/js/script_index.js" async defer></script>
+    </body>
+</html>
